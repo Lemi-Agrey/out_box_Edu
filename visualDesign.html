@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    min-height: 150vh;
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+  }
+  
+  #navbar {
+    width: 50%;
+    background-color: #767676;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .orange {
+    background-color: #FF7F00;
+  }
+
+  .cyan {
+    background-color: #00FFFF;
+  }
+
+  .raspberry {
+    background-color: #FF007F;
+  }
+.cyan:hover{
+  transform: scale(2.1);
+}
+  .colo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+  }
+      h1 {
+          font-size: 68px;
+          font-weight:800;
+        }
+        h2 {
+          font-size: 52px;
+          font-weight:600;
+          position: relative;
+          top: 15px;
+          bottom: 10px;
+          left:15px;
+      
+        }
+        h3 {
+          font-size: 40px;
+          font-weight: 500;
+        }
+        h4 {
+          font-size: 32px;
+          font-weight: 400;
+      
+        }
+        h5 {
+          font-size: 21px;
+          font-weight: 300;
+        }
+        h6 {
+          font-size: 14px;
+          font-weight: 200;
+      
+        }
+        a{
+          color: black;
+        }
+        a:hover{
+          color: blue;
+        }
+              h4 {
+                text-align: center;
+                padding: 10px;
+                background-color: rgba(45,45,45, 0.1);
+                font-size: 27px;
+                text-transform: uppercase;
+              }
+              p {
+                text-align: justify;
+                font-size: 16px;
+                line-height: 15px;
+              }
+              .links {
+                margin-right: 20px;
+                text-align: left;
+                opacity: 0.7;
+              }
+              .fullCard {
+                width: 400px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin: 10px 5px;
+                padding: 4px;
+              }
+              .cardContent {
+                padding: 10px;
+              }
+              #thumbnail{
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+              
+          #searchbar {
+
+            position: absolute;
+            top: 50px;
+            right: 50px;
+
+              }
+            section {
+            position: relative;
+            }
+    #left {
+      width: 50%;
+      float: left;
+    }
+    #right {
+      width: 40%;
+      float: right;
+    }
+    aside, section {
+      padding: 2px;
+      background-color: gray;
+    }
+    div {
+    width: 60%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    margin: auto;
+  }
+    </style>
+</head>
+<body>
+  <h1 style="color: blue;">Welcome!</h1>
+  <div class="colo orange"></div>
+<div class="colo cyan"></div>
+<div class="colo raspberry"></div>
+  <section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search">
+      <input type="submit" name="submit" value="Go!">
+    </form>
+  </section>
+<header>
+  <nav id="navbar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="pract.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="heartbeat.html">Heartbeat</a></li>
+      <li><a href="stars.html">Stars</a></li>
+      <li><a href="starmore.html">MoreStars</a></li>
+      <li><a href="animations.html">Animations</a></li>
+
+
+    </ul>
+  </nav>
+  
+</header>
+
+      <div class="fullCard" id="thumbnail">
+        <div class="cardContent">
+          <div class="cardText">
+            <h4><s>Google</s> Alphabet</h4>
+            <hr>
+            <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
+          </div>
+          <div class="cardLinks">
+            <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
+            <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+          </div>
+        </div>
+      </div>
+<h1>This is h1 text</h1>
+<h2>This is h2 text</h2>
+<h3>This is h3 text</h3>
+<h4>This is h4 text</h4>
+<h5>This is h5 text</h5>
+<h6>This is h6 text</h6>
+<div class="rect first"></div>
+<div class="rect second"></div>
+    
+</body>
+</html>

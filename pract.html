@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          width: 70%;
+          height: 100px;
+          margin:  50px auto;
+        }
+        #top {
+          background-color: red;
+          transform: skewY(-10deg);
+        }
+        #bottom {
+          background-color: blue;
+          transform: skewX(24deg);
+      
+        }
+    .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+  .heart::after {
+    background-color: red;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+    
+  }
+  .heart::before {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+  .di {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+    animation-name: rainbow; 
+    animation-duration: 4s;
+
+  }
+  @keyframes rainbow{
+    0%{
+      background-color: blue;
+      left: 0px;
+    }
+    50%{
+      background-color: green;
+      left: 25px;
+    }
+    100%{
+      background-color: yellow;
+      left: -25px;
+    }
+  }
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes background-color{
+    100%{
+      background-color: red;
+    }
+  }
+  #ball {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto;
+    position: fixed;
+    left: 20%;
+    border-radius: 50%;
+    opacity: 0.1, 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: fade;
+    animation-duration: 3s;
+    
+  }
+  
+
+  @keyframes fade {
+    50% {
+  opacity: 0.1;
+  left: 60%;
+
+    }
+
+  }
+    #ball3 {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  
+      </style>
+</head>
+<body>
+    <div id="top"></div>
+<!-- <div id="bottom"></div> -->
+?<div class="center"></div>
+<div class="heart"></div>
+<div id="rect" class="di"></div>
+<div id="ball"></div>
+<div id="ball3"></div>
+
+<button>Register</button>
+</body>
+</html>

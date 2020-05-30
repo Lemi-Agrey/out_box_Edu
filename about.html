@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: black; */
+            background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+        }
+        header{
+            background-color: #09A7A1;
+            color: white;
+            padding: 0.25em;
+
+        }
+        h2{
+            color: #FF790E;
+        }
+        button{
+            background-color: white;
+        }
+        footer{
+            background-color: #09A7A1;
+            color: white;
+            padding: 0.5em;
+
+        }
+        p{
+            color: white;
+            text-align: justify;
+            margin: 10px;
+        }
+        .green {
+    background-color: hsl(120, 100%, 50%);
+    margin: 15px;
+  }
+
+  .cyan {
+    background-color: hsl(180, 100%, 50%);
+    margin: 15px;
+  }
+
+  .blue {
+    background-color: hsl(240, 100%, 50%);
+    margin: 15px;
+  }
+  div {
+    display: inline-block;
+    /* height: 300px;  */
+    width: 400px;
+  }
+  nav {
+
+    background-color: hsl(180, 80%, 25%) ;
+    }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover{
+    color: blue;
+    transform: scale(2.1);
+  }
+  .trial {
+    border-radius: 20px;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    /* transform: scale(1.5); */
+    /* background: linear-gradient(35deg, #CCFFFF, #FFCCCC); */
+    background: repeating-linear-gradient(
+        45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+      
+    );
+  }
+  
+  h1{
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+  }
+  
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 >Some facts about GitHub</h1>
+        <nav>
+            <ul>
+              <li><a href="visualDesign.html">Home</a></li>
+        
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Step 8: Create a Pull Request (PR)</h2>
+            <p>
+                A pull request (or PR) is a way to alert a repo's owners that you 
+                want to make some changes to their code. It allows them to review 
+                the code and make sure it looks good before putting your changes 
+                on the master branch.
+            </p>
+            <button>Sign Up</button>
+        </article>
+        <article>
+            <h2>Step 7: Push a branch to GitHub</h2>
+            <p>
+                Now we'll push the commit in your branch to your new GitHub repo. 
+                This allows other people to see the changes you've made. If they're 
+                approved by the repository's owner, the changes can then be merged 
+                into the master branch.To push changes onto a new branch on GitHub, 
+                you'll want to run git push origin yourbranchname. GitHub will 
+                automatically create the branch for you on the remote repository: 
+            </p>
+            <button>Sign Up</button>
+        </article>
+        <div class="green">
+            <p>In August, we hosted a Women Who Code meetup at HubSpot and led a workshop for beginners on using git and GitHub. I first walked through a slide presentation on the basics and background of git and then we broke out into groups to run through a tutorial I created to simulate working on a large, collaborative project. We got feedback after the event that it was a helpful, hands-on introduction. So if you're new to git, too, follow the steps below to get comfortable making changes to the code base, opening up a pull request (PR), and merging code into the master branch. Any important git and GitHub terms are in bold with links to the official git reference materials. </p>
+        </div>
+        <div class="cyan">
+            <p>The first two things you'll want to do are install git and create a free GitHub account.
+                Follow the instructions here to install git (if it's not already installed). Note that for this tutorial we will be using git on the command line only. While there are some great git GUIs (graphical user interfaces), I think it's easier to learn git using git-specific commands first and then to try out a git GUI once you're more comfortable with the command. 
+                Once you've done that, create a GitHub account here.  (Accounts are free for public repositories, but there's a charge for private repositories.)
+                </p>
+        </div>
+        <div class="blue">
+            <p>When creating a new project on your local machine using git, you'll first create a new repository (or often, 'repo', for short). 
+                To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, check out this tutorial (especially the 'Navigating the Filesystem' and 'Moving Around' sections).
+                To begin, open up a terminal and move to where you want to place the project on your local machine using the cd (change directory) command. For example, if you have a 'projects' folder on your desktop, you'd do something like:
+            </p>
+        </div>
+
+    </main>
+    <h1 >Repeating-linear-gradient</h1>
+    <div class="trial"></div>
+
+    <footer>&copy 2020 GitHub    <p style="float: right;">Design by agreylemi@gmail.com </p> </footer>
+</body>
+</html>
