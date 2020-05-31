@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* color: #636363;
+            background-color: #FFF; */
+            color: hsl(0, 55%, 15%);
+            background-color: hsl(120, 25%, 55%);
+        }
+        .image{
+            width: 400px;
+            border-radius: 15px;
+            border-color:blue;
+            border-width: 10px;
+            border-style: solid;
+            padding: 10px;
+            margin: 20px;
+
+        }
+    .sr-only {
+    position:absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+  button {
+    color: #003366;
+    background-color: #FFFF33;
+    font-size: 14px;
+    padding: 10px;
+  }
+  p:focus {
+    background-color: yellow;
+  }
+  
+    </style>
+</head>
+<body>
+    <h1>Applied Accessibility</h1>
+    <img src="" alt="Missing picture of Plastic water filter" >
+    <p>Image soon</p>
+    <img src="lemi.jpg" alt="">
+    <header>
+        <!-- <h1>How to Become a Ninja</h1> -->
+        <h1>Deep Thoughts with Master Camper Cat</h1>
+    <nav>
+        <ul>
+            <li><a href="#Garfield">The Garfield Files</a></li>
+            <li><a href="#Defeating">Defeating your Foe</a></li>
+            <li><a href="#Cork">Is cork Noris</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        
+    <audio controls>
+        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg"/>
+    </audio>
+    <section>
+        <form>
+          <p tabindex="0">Sign up to receive Camper Cat's blog posts by email here!</p>
+    
+          <label for="search">Search:</label>
+          <input type="search" name="search" id="search" tabindex="1">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+          <fieldset>
+            <legend>What level ninja are you?</legend>
+            <input id="newbie" type="radio" name="levels" value="newbie">
+            <label for="newbie">Newbie Kitten</label><br>
+            <input id="intermediate" type="radio" name="levels" value="intermediate">
+            <label for="intermediate">Developing Student</label><br>
+            <input id="master" type="radio" name="levels" value="master">
+            <label for="master">Master</label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Select your favorite weapons:</legend>
+            <input id="stars" type="checkbox" name="weapons" value="stars">
+            <label for="stars">Throwing Stars</label><br>
+            <input id="nunchucks" type="checkbox" name="weapons" value="nunchucks">
+            <label for="nunchucks">Nunchucks</label><br>
+            <input id="sai" type="checkbox" name="weapons" value="sai">
+            <label for="sai">Sai Set</label><br>
+            <input id="sword" type="checkbox" name="weapons" value="sword">
+            <label for="sword">Sword</label>
+            </fieldset>
+            <br>
+          <label for="pickdate">Preferred Date:</label>    
+          <input type="date" id="pickdate" name="date"><br>
+          <input type="submit" name="submit" value="Submit" tabindex="2">
+          <button>Delete Internet</button>
+        </form>
+    <section>
+        <figure>
+         <br>
+         <figcaption>Breakdown per week of time to spend training in stealth, combat, and weapons.</figcaption>
+       </figure>      
+     </section>
+     <table class="sr-only">
+        <caption>Hours of Weekly Training in Stealth, Combat, and Weapons</caption>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Stealth &amp; Agility</th>
+            <th scope="col">Combat</th>
+            <th scope="col">Weapons</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Week One</th>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th scope="row">Week Two</th>
+            <td>4</td>
+            <td>5</td>
+            <td>3</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th scope="row">Week Three</th>
+            <td>4</td>
+            <td>6</td>
+            <td>3</td>
+            <td>13</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <h2>Learn the Art of Moving Stealthily</h2>
+      <h3>How to Hide in Plain Sight</h3>
+      <h3>How to Climb a Wall</h3>
+    
+      <h2>Learn the Art of Battle</h2>
+      <h3>How to Strengthen your Body</h3>
+      <h3>How to Fight like a Ninja</h3>
+    
+      <h2>Learn the Art of Living with Honor</h2>
+      <h3>How to Breathe Properly</h3>
+      <h3>How to Simplify your Life</h3> -->
+      <article>
+        <h2>Mortal Kombat Tournament Survey Results</h2>
+        <p>Thank you to everyone for responding to Master Camper Cat's survey. The best day to host the vaunted Mortal Kombat tournament is <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>. May the best ninja win!</p>
+      <article>
+          <section id="Garfield">
+            <h2>The Garfield Files: Lasagna as Training Fuel?</h2>
+            <p>The internet is littered with varying opinions on nutritional paradigms, from catnip paleo to hairball cleanses. But let's turn our attention to an often overlooked fitness fuel, and examine the protein-carb-NOM trifecta that is lasagna...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nisi corporis qui consequatur dolores ratione vero, temporibus maxime esse, repellendus ad magnam sunt quod atque incidunt laborum odio tempore quaerat.
+            </p>
+          </section>
+    
+        
+      </article>
+    
+      <img src="samuraiSwords.jpeg" alt="">
+    
+      <article>
+        <section id="Defeating">
+            <h2><a href="#" id="first" accesskey="g">Defeating your Foe: the Red Dot is Ours!</a></h2>
+            <p>Felines the world over have been waging war on the most persistent of foes. This red nemesis combines both cunning stealth and lightening speed. But chin up, fellow fighters, our time for victory may soon be near. Click here for <a href="">information about batteries</a> </p>
+        </section>
+        
+      </article>
+    
+      <img src="samuraiSwords.jpeg" alt="">
+    
+      <article>
+          <section  >
+            <h2><a href="#" id="second" accesskey="c">Is Chuck Norris a Cat Person?</a></h2>
+            <p>Chuck Norris is widely regarded as the premier martial artist on the planet, and it's a complete coincidence anyone who disagrees with this fact mysteriously disappears soon after. But the real question is, is he a cat person?...
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aliquam qui soluta eligendi quia cumque illum maiores reiciendis molestiae? Nulla dicta in rem libero atque, ipsam rerum sunt amet recusandae?
+            </p>
+          </section>
+        
+      </article>
+    </main>
+    <footer> &copy; 2020 Camper Cat</footer>
+    
+</body>
+</html>
