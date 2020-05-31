@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  header .profile-name {
+        display: flex;
+
+    margin-left: 10px;
+  }
+  header .follow-btn {
+        display: flex;
+        align-items: center;
+    margin: 0 0 0 auto;
+  }
+  header .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  header h3, header h4 {
+        display: flex;
+        margin: 0;
+  }
+  #inner p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #inner hr {
+    margin: 20px 0;
+    border-style: solid;
+    opacity: 0.1;
+  }
+  footer {
+        display: flex;
+        flex-direction: row;
+
+  }
+  footer .stats {
+      display: flex;
+    font-size: 15px;
+  }
+  footer .stats strong {
+    font-size: 18px;
+  }
+  footer .stats .likes {
+    margin-left: 10px;
+  }
+  footer .cta {
+    margin-left: auto;
+  }
+  footer .cta button {
+    border: 0;
+    background: transparent;
+  }
+        #box-container {
+        background-color: gray;
+          height: 500px;
+          display: flex;
+          /* flex-direction: row-reverse; */
+          /* flex-direction: column; */
+          /* justify-content: center; */
+          align-items: center;
+      
+        }
+      
+        #box-1 {
+          background-color: dodgerblue;
+          width: 200px;
+          font-size: 24px;
+        }
+      
+        #box-2 {
+          background-color: orangered;
+          width: 200px;
+          /* height: 100%; */
+          font-size: 18px;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: blue;
+        }
+    #box-container1 {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+
+  }
+  #box-3 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+        #box-4 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-7 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-8 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+  #box-container3 {
+    display: flex;
+    height: 500px;
+  }
+  #box-11 {
+    background-color: dodgerblue;
+    /* width: 100%; */
+    height: 200px;
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    /* flex-basis: 10em; */
+    /* the flex can also be written at once as grow, shrink and basis as below */
+    /* flex: 2 2 150px; */
+    width: 200px;
+    /* order: 2; */
+    align-self: center;
+  }
+
+  #box-12 {
+    background-color: orangered;
+    /* width: 100%; */
+    height: 200px;
+    /* flex-shrink: 2; */
+    /* flex-grow: 3; */
+    /* flex-basis: 20em; */
+    /* flex: 1 1 150px; */
+    width: 200px;
+    /* order: 1; */
+    align-self: flex-end;
+
+  }
+      </style>
+</head>
+<body>
+    <h1>Flex box practice</h1>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+  <div class="profile-name">
+    <h3>Quincy Larson</h3>
+    <h4>@ossia</h4>
+  </div>
+  <div class="follow-btn">
+    <button>Follow</button>
+  </div>
+</header>
+<div id="inner">
+  <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+  <span class="date">1:32 PM - 12 Jan 2020</span>
+  <hr>
+</div>
+<footer>
+  <div class="stats">
+    <div class="Retweets">
+      <strong>107</strong> Retweets
+    </div>
+    <div class="likes">
+      <strong>431</strong> Likes
+    </div>
+  </div>
+  <div class="cta">
+    <button class="share-btn">Share</button>
+    <button class="retweet-btn">Retweet</button>
+    <button class="like-btn">Like</button>
+  </div>
+</footer>
+    <div id="box-container">
+        <div id="box-1"><p>Hello</p></div>
+        <div id="box-2"><p>Goodbye</p></div>
+    </div>
+    <div id="box-container1">
+        <div id="box-3"></div>
+        <div id="box-4"></div>
+        <div id="box-5"></div>
+        <div id="box-6"></div>
+        <div id="box-7"></div>
+        <div id="box-8"></div>
+      </div>
+      <div id="box-container3">
+        <div id="box-11"></div>
+        <div id="box-12"></div>
+      </div>
+      
+</body>
+</html>
