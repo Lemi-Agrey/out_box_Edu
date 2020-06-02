@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+    .container {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .container2 {
+    font-size: 40px;
+    min-height: 100px;
+    width: 100%;
+    background: Silver;
+    display: grid;
+    /* Only change code below this line */
+
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+    /* Only change code above this line */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+      
+        /* .container {
+          font-size: 40px;
+          width: 100%;
+          background: LightGray; */
+          /* Only change code below this line */
+          /* display:grid; */
+          /* grid-template-columns: 100px 100px 100px;
+          grid-template-rows: 50px 50px; */
+          /* grid-template-columns: 1fr 100px 2fr; */
+          /* Only change code above this line */
+          /*  This leaves a 10px gap btn row and a 20px gap btn columns */
+          /* grid-gap: 10px 20px; */
+          /* grid-column: 2 / 4; */
+          /* grid-row: 2/4; */
+          
+          /* .item1{background: LightSkyBlue;}
+
+.item2 {
+  background: LightSalmon; */
+  /* Only change code below this line */
+
+  /* justify-self: center; */
+  /* Only change code above this line */
+  /* align-self: end;
+}
+
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5 {
+background: PaleGreen; */
+    /* Only change code below this line */
+
+/* grid-area: 3/1/4/4; */
+    /* Only change code above this line */
+  /* }
+
+  .container {
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+  } */
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .container3 {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
+
+  @media (min-width: 300px){
+    .container3{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+
+  @media (min-width: 400px){
+    .container3{
+      grid-template-areas:
+      /* Only change code below this line */
+        "header header"
+        "advert content"
+        "footer footer";
+      /* Only change code above this line */
+    }
+  }
+  .container4 {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+  .itema {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .itemb {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .itemc {
+    background: PaleTurquoise;
+    grid-area: content;
+    /* Only change code below this line */
+    grid-template-columns: auto 1fr;
+    display: grid;
+
+    /* Only change code above this line */
+  }
+
+  .itemd {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .iteme {
+    background: PaleGreen;
+  }
+
+  .itemf {
+    background: BlanchedAlmond;
+  }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+      <div class="container2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+      </div>
+      <div class="container3">
+        <div class="item1">header</div>
+        <div class="item2">advert</div>
+        <div class="item3">content</div>
+        <div class="item4">footer</div>
+      </div>
+      <div class="container4">
+        <div class="itema">header</div>
+        <div class="itemb">advert</div>
+        <div class="itemc">
+          <div class="iteme">paragraph1</div>
+          <div class="itemf">paragraph2</div>
+        </div>
+        <div class="itemd">footer</div>
+      </div>
+      
+      
+    
+</body>
+</html>
